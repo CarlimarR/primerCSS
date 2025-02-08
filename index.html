@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* selectro de etiqueta*/
+        body {
+            background-color: purple;
+            font-family: 'Franklin Gothic Mediumm', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /*selector de id*/
+        #contenedor {
+            width: 80%;
+            margin: 0 auto;
+            background-color: azure;
+            padding: 20px;
+        }
+        
+        /* selctor de clases */
+        .article {
+            color: purple;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid  #eee;
+            padding-top: 10px;
+            
+        }
+
+        p {
+            color: coral;
+
+        }
+
+    </style>
+
 </head>
 <body>
-    <div>
+    <div id="contenedor">
         <header>
             <h1>titulo</h1>
         </header>
@@ -28,27 +61,27 @@
             </ul>
         </nav>
         <section>
-            <article>
+            <article class="article">
                 <h2>titulo del articulo</h2>
                 <p>texto</p>
             </article>
 
-            <article>
+            <article class="article">
                 <h2>titulo del articulo 1</h2>
                 <p>texto</p>
             </article>
 
-            <article>
+            <article class="article">
                 <h2>titulo del articulo 2</h2>
                 <p>texto</p>
             </article>
 
-            <article>
+            <article class="article">
                 <h2>titulo del articulo 3</h2>
                 <p>texto</p>
             </article>
 
-            <article>
+            <article class="article">
                 <h2>titulo del articulo 4</h2>
                 <p>texto</p>
             </article>
@@ -65,7 +98,7 @@
             pie de pagina
         </footer>
 
-        
+
     </div>
 </body>
 </html>
