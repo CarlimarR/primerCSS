@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Css/styles.css">
 
     <style>
         /* selectro de etiqueta*/
         body {
             background-color: purple;
             font-family: 'Franklin Gothic Mediumm', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
         }
 
         /*selector de id*/
         #contenedor {
-            width: 80%;
+            float: left;
+            width: calc(80% - 40px);
             margin: 0 auto;
             background-color: azure;
             padding: 20px;
+            min-height: 500px;
+
         }
         
         /* selctor de clases */
@@ -60,7 +65,11 @@
                 </li>
             </ul>
         </nav>
-        <section>
+
+            <div class="clearfix"></div>
+
+
+        <section id="contenedor">
             <article class="article">
                 <h2>titulo del articulo</h2>
                 <p>texto</p>
@@ -93,6 +102,8 @@
                 <input type="text" value="buscar">
                 </form>
         </aside>
+
+        <div class="clearfix"></div>
 
         <footer>
             pie de pagina
