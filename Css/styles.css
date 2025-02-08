@@ -1,12 +1,12 @@
 * {
     margin: 0px;
-    padding: 0%;
+    padding: 0px;
 }
 
 header {
     background: violet;
     height: 100px;
-    width: 100px;
+    width: 100%;
     margin: 0px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -31,14 +31,14 @@ nav ul li{
 .article:first-child {
     border: 10px;
     border-top: 1px solid #eee;
-
+    border-bottom: 1px solid #eee;
 }
 
 aside {
     float: left;
-    width: 20%;
+    width: calc(20% - 20px);
     background: palevioletred;
-    min-height: 500px;
+    min-height: 520px;
     padding: 10px;
     padding-top: 50px;
 }
@@ -55,3 +55,10 @@ footer{
     clear: both;
 }
 
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    background: green;
+    min-height: 500px;
+    padding: 40px;
+}
